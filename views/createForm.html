@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create New Campaign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <article class="container">
+      <form action="addCampaign" method="post">
+        <fieldset>
+          <legend>Campaign</legend>
+
+          <label for="campaignName" data-error="Must not be empty.">Campaign Name</label>
+          <input type="text" id="campaignName" class="validate" required aria-required="true"/>
+
+          <label for="segment_size" data-error="Must not be empty.">Segment Size</label>
+          <input type="number" id="segment_size" class="validate" required aria-required="true"/>
+
+          <label for="country" data-error="Must not be empty.">Country</label>
+          <input type="text" id="country" class="validate" required aria-required="true"/>
+
+          <label for="language" data-error="Must not be empty.">Language</label>
+          <input type="text" id="language" class="validate" required aria-required="true"/>
+
+          <label for="device_types" data-error="Must not be empty.">Devices Types</label>
+          <input type="text" id="device_types" class="validate" required aria-required="true"/>
+
+          <label for="priority" data-error="Must not be empty.">Priority</label>
+          <input type="number" id="priority" class="validate" required aria-required="true" value="1"/>
+      </fieldset>
+
+      </form>
+    </article>
+  </body>
+</html>
