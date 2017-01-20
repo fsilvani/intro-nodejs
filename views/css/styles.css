@@ -1,0 +1,27 @@
+body{
+  background-color: #ebebeb;
+  color: #8e8e8e;
+}
+
+h1, h2{
+  margin: 0.1em 0;
+  font-size: 2em;
+}
+
+.container__title{
+  text-align: center;
+}
+
+fieldset{
+  font-size: 0.8em;
+}
+
+textarea.materialize-textarea{
+  padding: 0;
+  max-height: 10em;
+  overflow: auto;
+}
+
+.card{
+  border-radius: 7px;
+}

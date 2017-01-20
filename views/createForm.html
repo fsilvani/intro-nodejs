@@ -7,31 +7,126 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./views/css/styles.css">
+    <script type="text/javascript" src="./views/js/scripts.js"></script>
   </head>
   <body>
     <article class="container">
+      <h1 class="container__title">Create Campaign</h1>
       <form action="addCampaign" method="post">
-        <fieldset>
-          <legend>Campaign</legend>
+        <fieldset class="card row">
+          <h2>Campaign settings</h2>
 
-          <label for="campaignName" data-error="Must not be empty.">Campaign Name</label>
-          <input type="text" id="campaignName" class="validate" required aria-required="true"/>
+          <div class="input-field col s12 m6">
+            <label for="name" data-error="Must not be empty.">Campaign Name</label>
+            <input type="text" id="name" name="name" class="validate"/>
+          </div>
 
-          <label for="segment_size" data-error="Must not be empty.">Segment Size</label>
-          <input type="number" id="segment_size" class="validate" required aria-required="true"/>
+          <div class="input-field col s12 m6">
+            <label for="segment_size" data-error="Must not be empty.">Segment Size</label>
+            <input type="number" id="segment_size" name="segment_size" class="validate"/>
+          </div>
 
-          <label for="country" data-error="Must not be empty.">Country</label>
-          <input type="text" id="country" class="validate" required aria-required="true"/>
+          <div class="input-field col s12 m6">
+            <label for="country" data-error="Must not be empty.">Country</label>
+            <input type="text" id="country" name="country" class="validate"/>
+          </div>
 
-          <label for="language" data-error="Must not be empty.">Language</label>
-          <input type="text" id="language" class="validate" required aria-required="true"/>
+          <div class="input-field col s12 m6">
+            <label for="language" data-error="Must not be empty.">Language</label>
+            <input type="text" id="language" name="language" class="validate"/>
+          </div>
 
-          <label for="device_types" data-error="Must not be empty.">Devices Types</label>
-          <input type="text" id="device_types" class="validate" required aria-required="true"/>
+          <div class="input-field col s12 m6">
+            <select name="device_types" multiple>
+              <option value="" disabled selected>Device Types</option>
+              <option value="ANDROID">ANDROID</option>
+              <option value="IPHONE">IPHONE</option>
+              <option value="WEB">WEB</option>
+            </select>
+          </div>
 
-          <label for="priority" data-error="Must not be empty.">Priority</label>
-          <input type="number" id="priority" class="validate" required aria-required="true" value="1"/>
-      </fieldset>
+          <div class="input-field col s12 m6">
+            <label for="priority" data-error="Must not be empty.">Priority</label>
+            <input type="number" id="priority" name="priority" class="validate" value="1"/>
+          </div>
+
+          <div class="input-field col s6 m4">
+            <input type="date" name="start_date" id="start_date" name="start_date" class="datepicker">
+            <label for="start_date" data-error="Must not be empty.">Start Date</label>
+          </div>
+
+          <div class="input-field col s6 m4">
+            <input type="date" name="end_date" id="start_date" name="start_date" class="datepicker">
+            <label for="end_date" data-error="Must not be empty.">End Date</label>
+          </div>
+
+          <div class="input-field col s12 m4">
+            <select name="campaign_targets" multiple>
+              <option value="" disabled selected>Campaign Targets</option>
+              <option value="NEW_USERS">NEW_USERS</option>
+              <option value="EXISTING_USERS">EXISTING_USERS</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="card row">
+
+          <h2>Segments settings</h2>
+
+          <div class="col s12">
+            <fieldset class="card row">
+              <div class="input-field col s12 m6">
+                <label for="segments_tag_1" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segments_tag_1" name="segments_tag_1" class="validate" />
+              </div>
+
+              <div class="input-field col s12 m6">
+                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="card row">
+              <div class="input-field col s12 m6">
+                <label for="segments_tag_2" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segments_tag_2" name="segments_tag_2" class="validate" />
+              </div>
+
+              <div class="input-field col s12 m6">
+                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="card row">
+              <div class="input-field col s12 m6">
+                <label for="segments_tag_3" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segments_tag_3" name="segments_tag_3" class="validate" />
+              </div>
+
+              <div class="input-field col s12 m6">
+                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="card row">
+              <div class="input-field col s12 m6">
+                <label for="segments_tag_4" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segments_tag_4" name="segments_tag_4" class="validate" />
+              </div>
+
+              <div class="input-field col s12 m6">
+                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+              </div>
+            </fieldset>
+          </div>
+
+        </fieldset>
+
+        <button type="submit" class="waves-effect waves-light btn">Create Campaign</button>
 
       </form>
     </article>

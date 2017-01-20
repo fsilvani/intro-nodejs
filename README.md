@@ -1,2 +1,2 @@
-# intro-nodejs
-Intro project to learn about Node.js
+# Wonka Campaign Creator
+Node.js app to create new sponsored campaigns
