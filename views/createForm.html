@@ -52,12 +52,12 @@
           </div>
 
           <div class="input-field col s6 m4">
-            <input type="date" name="start_date" id="start_date" name="start_date" class="datepicker">
+            <input type="date" name="start_date" id="start_date" class="datepicker">
             <label for="start_date" data-error="Must not be empty.">Start Date</label>
           </div>
 
           <div class="input-field col s6 m4">
-            <input type="date" name="end_date" id="start_date" name="start_date" class="datepicker">
+            <input type="date" name="end_date" id="end_date" class="datepicker">
             <label for="end_date" data-error="Must not be empty.">End Date</label>
           </div>
 
@@ -76,50 +76,54 @@
 
           <div class="col s12">
             <fieldset class="card row">
+              <input type="hidden" name="segments" value="0" />
               <div class="input-field col s12 m6">
-                <label for="segments_tag_1" data-error="Must not be empty.">Segment Users tag</label>
-                <input type="text" id="segments_tag_1" name="segments_tag_1" class="validate" />
+                <label for="segment1_tag" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segment1_tag" name="segment1_tag" class="validate" />
               </div>
 
               <div class="input-field col s12 m6">
-                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
-                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
-              </div>
-            </fieldset>
-
-            <fieldset class="card row">
-              <div class="input-field col s12 m6">
-                <label for="segments_tag_2" data-error="Must not be empty.">Segment Users tag</label>
-                <input type="text" id="segments_tag_2" name="segments_tag_2" class="validate" />
-              </div>
-
-              <div class="input-field col s12 m6">
-                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
-                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+                <label for="segment1_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment1_questions_id" name="segment1_questions_id" class="validate materialize-textarea"></textarea>
               </div>
             </fieldset>
 
             <fieldset class="card row">
+              <input type="hidden" name="segments" value="1" />
               <div class="input-field col s12 m6">
-                <label for="segments_tag_3" data-error="Must not be empty.">Segment Users tag</label>
-                <input type="text" id="segments_tag_3" name="segments_tag_3" class="validate" />
+                <label for="segment2_tag" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segment2_tag" name="segment2_tag" class="validate" />
               </div>
 
               <div class="input-field col s12 m6">
-                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
-                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+                <label for="segment2_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment2_questions_id" name="segment2_questions_id" class="validate materialize-textarea"></textarea>
               </div>
             </fieldset>
 
             <fieldset class="card row">
+              <input type="hidden" name="segments" value="2" />
               <div class="input-field col s12 m6">
-                <label for="segments_tag_4" data-error="Must not be empty.">Segment Users tag</label>
-                <input type="text" id="segments_tag_4" name="segments_tag_4" class="validate" />
+                <label for="segment3_tag" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segment3_tag" name="segment3_tag" class="validate" />
               </div>
 
               <div class="input-field col s12 m6">
-                <label for="segment_questions_id" data-error="Must not be empty.">Questions Id</label>
-                <textarea id="segment_questions_id" name="segment_questions_id" class="validate materialize-textarea"></textarea>
+                <label for="segment3_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment3_questions_id" name="segment3_questions_id" class="validate materialize-textarea"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="card row">
+              <input type="hidden" name="segments" value="3" />
+              <div class="input-field col s12 m6">
+                <label for="segment4_tag" data-error="Must not be empty.">Segment Users tag</label>
+                <input type="text" id="segment4_tag" name="segment4_tag" class="validate" />
+              </div>
+
+              <div class="input-field col s12 m6">
+                <label for="segment4_questions_id" data-error="Must not be empty.">Questions Id</label>
+                <textarea id="segment4_questions_id" name="segment4_questions_id" class="validate materialize-textarea"></textarea>
               </div>
             </fieldset>
           </div>

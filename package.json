@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node.js app to create new sponsored campaigns",
   "engines": {
-    "node": "5.9.1"
+    "node": "6.9.4"
   },
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "4.13.3",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "request": "^2.79.0"
   }
 }
